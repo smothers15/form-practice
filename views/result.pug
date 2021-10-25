@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    div.card(style=`background-color: ${color}`)
+        div.text
+            p color: #{color}
+            p #{text}
+            p check: #{underlined}
+            a(href="/") Back
