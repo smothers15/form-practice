@@ -54,10 +54,33 @@ block content
     input(type="radio" name="size" id="five" value="five")
     label(for="five") 500px
     br
-    p
+    p Text Color
+    input(type="radio" name="textColor" id="black" value="black")
+    label(for="black") Black
+
+    input(type="radio" name="textColor" id="white" value="white")
+    label(for="white") White
+
+    br
     label(for="underlined") Underlined
     input(type="checkbox" name="underlined" id = "underlined" value = "underlined")
     br
+    br
+    label(for="border") Border Color
+    br
+    select(name="border" id="border")
+      option(value="black") Black
+      option(value="blue") Blue
+      option(value="red") Red
+      option(value="purple") Purple
+    br
+    label(for="borderWidth") Border Width
+      br
+      select(name="borderWidth" id="borderWidth")
+        option(value="1") 1px
+        option(value="2") 2px
+        option(value="3") 3px
+        option(value="4") 4px
     p
     label(for="textInput") Type Something:
     br
