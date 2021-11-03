@@ -41,11 +41,27 @@ block content
     label(for="orange") Orange
     br
     br
-    label(for="textInput") Type Something:
+    p Card Width
+    input(type="radio" name="size" id="one" value="one")
+    label(for="one") 100px
+
+    input(type="radio" name="size" id="two" value="two")
+    label(for="two") 200px
+
+    input(type="radio" name="size" id="three" value="three")
+    label(for="three") 300px
+
+    input(type="radio" name="size" id="five" value="five")
+    label(for="five") 500px
     br
+    p
     label(for="underlined") Underlined
     input(type="checkbox" name="underlined" id = "underlined" value = "underlined")
     br
+    p
+    label(for="textInput") Type Something:
+    br
+
     textarea(id = "textInput" name = "textInput" cols=40 rows=5)
     br
     button(type="submit" method="post") Submit

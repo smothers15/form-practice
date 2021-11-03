@@ -8,12 +8,14 @@ router.get('/', function(req, res, next) {
 
 router.post('/results', function(req, res, next) {
 
-  console.log(req.body.colors);
-  console.log("underlined" + req.body.underlined);
+
+  //console.log(size);
   res.render('result',{
     color: req.body.colors,
-    text: req.body.textInput,
-    underlined: req.body.underlined
+    text: req.body.textInput||"This is an example of something you could type here.",
+    underlined: req.body.underlined,
+    size: req.body.size,
+
   });
 });
 

@@ -1,9 +1,10 @@
 extends layout
 
 block content
-    div.card(style=`background-color: ${color}`)
-        div.text
-            p color: #{color}
+    div.card(class = `card ${size}` style=`background-color: ${color}`)
+        div.text(class = `text ${underlined}`)
+            //p color: #{color}
             p #{text}
-            p check: #{underlined}
+            //p check: #{underlined}
+
             a(href="/") Back
