@@ -4,6 +4,6 @@ block content
     div.card(class = `card ${size}` style=`border: ${borderWidth}px solid ${borderColor}; background-color: ${color}; color: ${textColor}`)
         div.text(class = `text ${underlined}`)
             //p color: #{color}
-            p #{text}
+            p(class = 'textOutput') #{text}
 
             a(href="/") Back
