@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1 My Form
+  p Test the options and see how they affect the resulting card.
   //form(action="/results" method="post")
     label(for="description") Description:
     br
@@ -24,7 +25,7 @@ block content
     br
     button(type="submit") Submit This
   form(action="/results" method="post")
-    p Background Colors
+    h4 Background Colors
     input(type="radio" name="colors" id="red" value="red")
     label(for="red") Red
 
@@ -40,8 +41,7 @@ block content
     input(type="radio" name="colors" id="orange" value="orange")
     label(for="orange") Orange
     br
-    br
-    p Card Width
+    h4 Card Width
     input(type="radio" name="size" id="one" value="one")
     label(for="one") 100px
 
@@ -54,13 +54,13 @@ block content
     input(type="radio" name="size" id="five" value="five")
     label(for="five") 500px
     br
-    p Text Color
+    h4 Text Color
     input(type="radio" name="textColor" id="black" value="black")
     label(for="black") Black
 
     input(type="radio" name="textColor" id="white" value="white")
     label(for="white") White
-
+    br
     br
     label(for="underlined") Underlined
     input(type="checkbox" name="underlined" id = "underlined" value = "underlined")
